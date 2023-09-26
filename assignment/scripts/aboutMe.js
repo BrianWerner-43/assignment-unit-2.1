@@ -45,21 +45,37 @@ let friendsPets = 2;
 console.log('Inside friendsPets:', friendsPets);
 
 // 10 - Add two pets to your `pets` variable
-pets = pets+2;
+pets = pets +2;
 console.log('Adding 2 more pets:', pets);
 
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
+const allowedPets = 2;
+console.log('allowedPets is:', allowedPets);
 
 // 12 - Create a variable called `result`. Create a conditional:
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
+let result = '';
+console.log('Are adventures great?:');
+if (adventurous === true) {
+  result = 'Adventures are great!';
+} else {
+  result = 'How about we stay home?';
+};
+console.log(result);
 
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
+let diceRoll = "Try again later.";
+if (luckyNumber === 2 && adventurous === true) {
+  diceRoll = "Roll the dice!";
+};
+console.log('In diceRoll:', diceRoll);
+
 
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
@@ -69,6 +85,15 @@ console.log('Adding 2 more pets:', pets);
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
+let petStatus = '';
+if (pets < allowedPets) {
+  petStatus = 'I can have more pets';
+} else if (pets === allowedPets) {
+  petStatus = 'I have enough pets';
+} else if (pets > allowedPets) {
+  petStatus = 'Oh no, I have too many pets!';
+};
+console.log('In petStatus:', petStatus);
 
 
 // STRETCH GOALS:
