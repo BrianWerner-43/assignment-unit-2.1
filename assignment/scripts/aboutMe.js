@@ -47,7 +47,7 @@ console.log('Inside friendsPets:', friendsPets);
 
 // 10 - Add two pets to your `pets` variable
 pets = pets +2;
-console.log('Adding 2 more pets:', pets);
+console.log('Adding 2 more pets to pets:', pets);
 
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 2;
@@ -57,7 +57,7 @@ console.log('allowedPets is:', allowedPets);
 //      if adventurous is true, set `result` to be "Adventures are great!", 
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
-let result = '';
+let result;
 console.log('Are adventures great?:');
 if (adventurous === true) {
   result = 'Adventures are great!';
@@ -86,7 +86,7 @@ console.log('In diceRoll:', diceRoll);
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
-let petStatus = '';
+let petStatus;
 if (pets < allowedPets) {
   petStatus = 'I can have more pets';
 } else if (pets === allowedPets) {
