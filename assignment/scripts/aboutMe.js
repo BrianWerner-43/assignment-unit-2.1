@@ -16,6 +16,7 @@ console.log(fullName);
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
 let luckyNumber = 7;
+console.log('My lucky number is:', luckyNumber);
 
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
@@ -103,6 +104,15 @@ console.log('In petStatus:', petStatus);
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
+let mostPets = 0;
+if (pets >= friendsPets) {
+  mostPets = pets;
+} else if (friendsPets >= pets) {
+  mostPets = friendsPets;
+};
+console.log('In mostPets:', mostPets);
+
+
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
@@ -112,9 +122,28 @@ console.log('In petStatus:', petStatus);
 //      Otherwise, "Luck is what happens when preparation meets opportunity"
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
+let luckyResult;
+
+switch(luckyNumber) {
+  case 1:
+    luckyResult = 'First is the worst';
+    break;
+  case 2:
+    luckyResult = 'Second is the best';
+    break;
+  case 3:
+    luckyResult = 'Third is the one with the poka dot dress';
+    break;
+    default:
+      luckyResult = 'Luck is what happens when preparation meets opportunity';
+
+};
+console.log('Inside of luckyResult:', luckyResult);
+
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
-
+adventurous ? result = "Adventures are great!" : result = "How about we stay home?";
+console.log('Inside the adventurous ternary result:', result);
 
 
 
