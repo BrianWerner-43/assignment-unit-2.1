@@ -27,16 +27,26 @@ console.log(introduction);
 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
+let adventurous = true;
+console.log('Inside of adventurous:', adventurous);
 
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
+let food = 'Tacos';
+console.log('Inside of food:', food);
 
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
+let pets = 1;
+console.log('Inside of pets:', pets);
 
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
+let friendsPets = 2;
+console.log('Inside friendsPets:', friendsPets);
 
 // 10 - Add two pets to your `pets` variable
+pets = pets+2;
+console.log('Adding 2 more pets:', pets);
 
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 
